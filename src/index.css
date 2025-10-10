@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Noto Sans Devanagari', 'Inter', system-ui, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200;
+  }
+  
+  .nav-link-active {
+    @apply bg-indigo-700 text-white;
+  }
+  
+  .nav-link-inactive {
+    @apply text-indigo-100 hover:bg-indigo-500 hover:text-white;
+  }
+  
+  .btn-primary {
+    @apply bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:bg-yellow-400 hover:text-black transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:bg-indigo-100 hover:text-indigo-700 transform hover:scale-105;
+  }
+}

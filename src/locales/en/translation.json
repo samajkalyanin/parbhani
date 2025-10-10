@@ -1,0 +1,178 @@
+{
+  "site": {
+    "name": "GRS Parbhani",
+    "fullName": "Government Residential School Parbhani",
+    "tagline": "Education is the best investment",
+    "description": "Leading Government Residential School in Parbhani District"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "facilities": "Facilities",
+    "schemes": "Schemes",
+    "gallery": "Gallery",
+    "blog": "News",
+    "contact": "Contact",
+    "downloadApp": "Download App",
+    "applyAdmission": "Apply for Admission"
+  },
+  "hero": {
+    "title": "Center of Quality Education",
+    "subtitle": "Join us for a bright future of your children",
+    "motto": "Knowledge gives humility",
+    "applyAdmission": "Apply for Admission",
+    "learnMore": "Learn More"
+  },
+  "features": {
+    "feature1": {
+      "title": "Quality Education",
+      "description": "We believe in the holistic development of students under the guidance of modern teaching methods and experienced teachers. In our school, every student gets the opportunity to learn according to their ability."
+    },
+    "feature2": {
+      "title": "Residential Facilities",
+      "description": "Complete residential facilities are available including comfortable hostels, nutritious food, and safe environment. Students living in our hostels get a home-like atmosphere."
+    },
+    "feature3": {
+      "title": "Academic Excellence",
+      "description": "Students from our school are performing excellently in state and national competitions. We guide every student to reach their academic goals."
+    },
+    "feature4": {
+      "title": "Sports & Recreation",
+      "description": "Various sports facilities are available for physical development. Our students participate in many sports including cricket, football, badminton, kabaddi."
+    },
+    "feature5": {
+      "title": "Scholarship Schemes",
+      "description": "Various scholarship schemes are available for needy and meritorious students. We strive to ensure that no student's education is interrupted due to financial reasons."
+    },
+    "feature6": {
+      "title": "Career Guidance",
+      "description": "We help provide proper guidance and advice for students' future careers. Students can make right decisions by getting guidance from experts in various fields."
+    }
+  },
+  "facilities": {
+    "hostel": {
+      "title": "Hostel",
+      "description": "Modern hostel equipped with facilities where students get a home-like atmosphere. Clean rooms, study arrangements and 24-hour security.",
+      "features": ["Clean and comfortable rooms", "24/7 security system", "Study facilities", "Recreation arrangements"]
+    },
+    "library": {
+      "title": "Library",
+      "description": "Modern library with extensive book collection where books, magazines and reference books of all subjects are available.",
+      "features": ["Collection of 10,000+ books", "Digital library", "Quiet study area", "Periodicals and newspapers"]
+    },
+    "mess": {
+      "title": "Mess",
+      "description": "Arrangement for nutritious and clean food. Balanced diet including local cuisine is important for students' health.",
+      "features": ["Nutritious food", "Local cuisine", "Hygiene care", "Timely meal arrangement"]
+    },
+    "sports": {
+      "title": "Sports Facilities",
+      "description": "Comprehensive facilities for all sports necessary for physical development. Participation in inter-school and district level competitions.",
+      "features": ["Cricket ground", "Football field", "Indoor games", "Sports equipment"]
+    },
+    "labs": {
+      "title": "Laboratories",
+      "description": "Modern laboratories for science subjects where students can learn by doing practical experiments. Computer laboratory is also available.",
+      "features": ["Physics laboratory", "Chemistry laboratory", "Biology laboratory", "Computer laboratory"]
+    },
+    "health": {
+      "title": "Health Center",
+      "description": "Qualified medical staff and primary treatment facilities are available to take care of students' health.",
+      "features": ["24/7 medical facility", "First aid", "Regular health checkups", "Emergency services"]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us or apply for admission",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "helplineHours": "Helpline Hours: 9 AM to 6 PM",
+    "admissionForm": "Admission Form",
+    "downloadApp": "Download App",
+    "callNow": "Call Now",
+    "whatsappNow": "Send WhatsApp Message"
+  },
+  "form": {
+    "name": "Full Name",
+    "nameRequired": "Name is required",
+    "phone": "Phone Number",
+    "phoneRequired": "Phone number is required",
+    "email": "Email (Optional)",
+    "currentClass": "Current Class",
+    "selectClass": "Select Class",
+    "preferredIntake": "Preferred Intake",
+    "selectIntake": "Select Intake Period",
+    "immediate": "Immediate",
+    "nextAcademicYear": "Next Academic Year",
+    "queryType": "Query Type",
+    "admission": "Admission",
+    "scholarship": "Scholarship",
+    "general": "General",
+    "other": "Other",
+    "message": "Message (Optional)",
+    "consent": "I agree to the terms and conditions",
+    "consentRequired": "Please agree to terms and conditions",
+    "submit": "Submit Application",
+    "sendWhatsApp": "Send via WhatsApp",
+    "submitting": "Submitting...",
+    "success": "Your application has been submitted successfully!",
+    "error": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "about": {
+      "title": "About Us",
+      "description": "Leading Government Residential School in Parbhani district providing quality education.",
+      "samajkalyan": "Social Welfare Department"
+    },
+    "quickLinks": {
+      "title": "Quick Links"
+    },
+    "downloads": {
+      "title": "Downloads & Resources",
+      "mobileApp": "Mobile App",
+      "admissionPdf": "Admission Brochure",
+      "circulars": "Circulars"
+    },
+    "contactSocial": {
+      "title": "Contact & Social Media",
+      "followUs": "Follow Us"
+    },
+    "copyright": "© 2024 GRS Parbhani. All rights reserved.",
+    "designedBy": "Designed & Developed by: Social Welfare Team"
+  },
+  "meta": {
+    "home": {
+      "title": "GRS Parbhani - Center of Quality Education",
+      "description": "Leading Government Residential School in Parbhani District. Quality education, modern facilities and holistic development."
+    },
+    "about": {
+      "title": "About Us - GRS Parbhani",
+      "description": "Learn about our school's history, vision and academic excellence."
+    },
+    "facilities": {
+      "title": "Facilities - GRS Parbhani",
+      "description": "Modern facilities at our school: hostel, library, laboratories, sports grounds and much more."
+    },
+    "schemes": {
+      "title": "Schemes - GRS Parbhani",
+      "description": "Information about scholarships and government schemes available for students."
+    },
+    "contact": {
+      "title": "Contact - GRS Parbhani",
+      "description": "Get in touch with us and apply for admission."
+    }
+  },
+  "common": {
+    "readMore": "Read More",
+    "apply": "Apply",
+    "download": "Download",
+    "share": "Share",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "loading": "Loading...",
+    "notFound": "Page Not Found"
+  }
+}

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://parbhani.samajkalyan.info/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /downloads/
