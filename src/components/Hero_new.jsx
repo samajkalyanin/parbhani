@@ -31,18 +31,18 @@ const Hero = () => {
   const stats = [
     { icon: FaUsers, value: '1000+', key: 'students', color: 'text-blue-400' },
     { icon: FaChalkboardTeacher, value: '50+', key: 'teachers', color: 'text-green-400' },
-    { icon: FaClock, value: '20+', key: 'experience', color: 'text-indigo-400' },
+    { icon: FaClock, value: '20+', key: 'experience', color: 'text-purple-400' },
     { icon: FaHome, value: '100%', key: 'residential', color: 'text-orange-400' },
-    { icon: FaMedal, value: '95%', key: 'passRate', color: 'text-yellow-400' },
+    { icon: FaMedal, value: '95%', key: 'passRate', color: 'text-pink-400' },
     { icon: FaLaptop, value: '24/7', key: 'digitalLearning', color: 'text-cyan-400' }
   ]
 
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-900 via-blue-900 to-slate-900 py-8 sm:py-12">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900">
       {/* Background Elements */}
       <div className="absolute inset-0">
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 via-blue-900/80 to-slate-900/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 via-purple-900/80 to-blue-900/90"></div>
         
         {/* Animated Shapes */}
         <motion.div 
@@ -59,7 +59,7 @@ const Hero = () => {
         />
         
         <motion.div 
-          className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-indigo-600/20 rounded-full filter blur-3xl"
+          className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-purple-500/20 rounded-full filter blur-3xl"
           animate={{
             scale: [1.2, 1, 1.2],
             opacity: [0.4, 0.2, 0.4],
@@ -79,7 +79,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="space-y-6"
+          className="space-y-8"
         >
           {/* Badge */}
           <motion.div 
@@ -102,7 +102,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.4 }}
           >
             <span className="block text-white mb-2">
-              {t('hero.title')}
+              {t('hero.title').split(',')[0]},
             </span>
             <motion.span 
               className="block bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent"
@@ -116,7 +116,7 @@ const Hero = () => {
               }}
               style={{ backgroundSize: '200% 200%' }}
             >
-              {t('hero.titleSecond')}
+              {t('hero.title').split(',')[1]?.trim() || 'परभणी'}
             </motion.span>
           </motion.h1>
 
@@ -132,7 +132,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <motion.div 
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -161,7 +161,7 @@ const Hero = () => {
 
           {/* Stats Grid */}
           <motion.div 
-            className="grid grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4 max-w-5xl mx-auto mt-8"
+            className="grid grid-cols-3 md:grid-cols-6 gap-4 max-w-4xl mx-auto mt-16"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
@@ -169,22 +169,15 @@ const Hero = () => {
             {stats.map((stat, index) => (
               <motion.div 
                 key={stat.key}
-                className="flex flex-col items-center p-3 sm:p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 transition-all duration-300 min-h-[100px] sm:min-h-[110px]"
+                className="flex flex-col items-center p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 transition-all duration-300"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.2 + (index * 0.1) }}
                 whileHover={{ scale: 1.05, y: -5 }}
               >
-                <stat.icon className={`w-5 h-5 sm:w-6 sm:h-6 ${stat.color} mb-2`} />
-                <span className="text-lg sm:text-xl font-bold text-white mb-1">{stat.value}</span>
-                <span className="text-xs sm:text-sm text-gray-300 text-center leading-tight px-1" style={{
-                  display: '-webkit-box',
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: 'vertical',
-                  overflow: 'hidden',
-                  lineHeight: '1.3',
-                  minHeight: '32px'
-                }}>
+                <stat.icon className={`w-6 h-6 ${stat.color} mb-2`} />
+                <span className="text-xl font-bold text-white mb-1">{stat.value}</span>
+                <span className="text-xs text-gray-300 text-center">
                   {t(`hero.stats.${stat.key}`)}
                 </span>
               </motion.div>

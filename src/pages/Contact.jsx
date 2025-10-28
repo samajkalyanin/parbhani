@@ -85,140 +85,159 @@ const Contact = () => {
         <link rel="alternate" hreflang="en" href="/contact?lang=en" />
       </Helmet>
 
-      <div className="bg-white">
-        {/* Header */}
-        <div className="bg-indigo-600 text-white py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <div className="bg-gray-50 min-h-screen">
+        {/* Header - Modern Gradient */}
+        <div className="bg-gradient-to-br from-indigo-900 via-blue-800 to-indigo-900 text-white py-12 sm:py-16 relative overflow-hidden">
+          {/* Decorative Elements */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
+            <div className="absolute bottom-10 right-10 w-40 h-40 bg-yellow-300 rounded-full blur-3xl"></div>
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <motion.h1 
+              className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
               {t('contact.title')}
-            </h1>
-            <p className="text-xl text-indigo-200 max-w-3xl mx-auto">
+            </motion.h1>
+            <motion.p 
+              className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               {t('contact.subtitle')}
-            </p>
+            </motion.p>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
             
-            {/* Left Column - Contact Info & Map */}
-            <div className="space-y-8">
+            {/* Left Column - Contact Info & Quick Actions */}
+            <div className="lg:col-span-1 space-y-6">
               
               {/* Contact Information Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <motion.div
                     key={index}
-                    className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 cursor-pointer"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    className="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     onClick={info.action}
+                    whileHover={{ scale: 1.02, x: 5 }}
                   >
-                    <info.icon className={`w-8 h-8 ${info.color} mb-4`} />
-                    <h3 className="font-semibold text-gray-900 mb-2">{info.title}</h3>
-                    {info.details.map((detail, i) => (
-                      <p key={i} className="text-gray-600 text-sm">{detail}</p>
-                    ))}
+                    <div className="flex items-start space-x-4">
+                      <div className={`p-3 rounded-lg ${info.color.replace('text-', 'bg-').replace('500', '100')}`}>
+                        <info.icon className={`w-5 h-5 ${info.color}`} />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-semibold text-gray-900 mb-2 text-sm">{info.title}</h3>
+                        {info.details.map((detail, i) => (
+                          <p key={i} className="text-gray-600 text-xs leading-relaxed">{detail}</p>
+                        ))}
+                      </div>
+                    </div>
                   </motion.div>
                 ))}
               </div>
 
               {/* Quick Action Buttons */}
-              <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+              <div className="space-y-3">
                 <Button
                   onClick={handleCallClick}
-                  className="flex items-center justify-center space-x-2"
+                  className="w-full flex items-center justify-center space-x-2 bg-indigo-600 hover:bg-indigo-700"
                 >
                   <FaPhone className="w-4 h-4" />
                   <span>{t('contact.callNow')}</span>
                 </Button>
                 
                 <Button
-                  variant="success"
                   onClick={handleWhatsAppClick}
-                  className="flex items-center justify-center space-x-2"
+                  className="w-full flex items-center justify-center space-x-2 text-white hover:opacity-90"
                   style={{ backgroundColor: '#25D366' }}
                 >
-                  <FaWhatsapp className="w-4 h-4" />
+                  <FaWhatsapp className="w-5 h-5" />
                   <span>{t('contact.whatsappNow')}</span>
                 </Button>
               </div>
 
               {/* App Download Section */}
               <motion.div 
-                className="bg-gradient-to-r from-indigo-500 to-blue-600 rounded-lg p-6 text-white"
+                className="bg-gradient-to-br from-indigo-600 to-blue-600 rounded-xl p-5 text-white shadow-lg"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <div className="flex items-center justify-between">
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold mb-2">
-                      {t('contact.downloadApp')}
-                    </h3>
-                    <p className="text-indigo-100 text-sm mb-4">
-                      {i18n.language === 'mr' 
-                        ? 'अप्लिकेशन डाउनलोड करा आणि सहज प्रवेश प्रक्रिया करा' 
-                        : 'Download our app for easy admission process'}
-                    </p>
-                    <div className="flex space-x-3">
-                      <Button
-                        variant="secondary"
-                        size="sm"
-                        onClick={() => window.open('/downloads/parbhani-app.apk', '_blank')}
-                        className="flex items-center space-x-2"
-                      >
-                        <FaDownload className="w-4 h-4" />
-                        <span>APK</span>
-                      </Button>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="flex items-center space-x-2 text-white border-white hover:bg-white hover:text-indigo-600"
-                      >
-                        <FaQrcode className="w-4 h-4" />
-                        <span>QR</span>
-                      </Button>
-                    </div>
+                <div className="text-center">
+                  <div className="text-4xl mb-3">📱</div>
+                  <h3 className="text-base font-semibold mb-2">
+                    {t('contact.downloadApp')}
+                  </h3>
+                  <p className="text-blue-100 text-xs mb-4">
+                    {i18n.language === 'mr' 
+                      ? 'अप्लिकेशन डाउनलोड करा' 
+                      : 'Download our mobile app'}
+                  </p>
+                  <div className="flex gap-2 justify-center">
+                    <Button
+                      size="sm"
+                      onClick={() => window.open('/downloads/parbhani-app.apk', '_blank')}
+                      className="flex items-center space-x-2 bg-white text-indigo-600 hover:bg-gray-100 text-xs px-3 py-2"
+                    >
+                      <FaDownload className="w-3 h-3" />
+                      <span>APK</span>
+                    </Button>
+                    <Button
+                      size="sm"
+                      className="flex items-center space-x-2 bg-white/20 text-white border border-white hover:bg-white hover:text-indigo-600 text-xs px-3 py-2"
+                    >
+                      <FaQrcode className="w-3 h-3" />
+                      <span>QR</span>
+                    </Button>
                   </div>
-                  <div className="hidden sm:block text-6xl opacity-20">📱</div>
                 </div>
               </motion.div>
 
               {/* Google Maps */}
               <motion.div 
-                className="bg-gray-50 rounded-lg overflow-hidden"
+                className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                  {/* TODO: Replace with actual Google Maps embed */}
+                <div className="relative h-64">
+                  {/* Placeholder - replace with actual Google Maps */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                    <div className="text-center text-gray-600">
+                      <FaMapMarkerAlt className="w-10 h-10 mx-auto mb-2 text-red-500" />
+                      <p className="font-semibold text-sm">School Location</p>
+                      <p className="text-xs">Parbhani, Maharashtra</p>
+                    </div>
+                  </div>
+                  {/* TODO: Uncomment when you add actual Google Maps coordinates
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.8076749346983!2d76.76523431447506!3d19.268893986999056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1f7e9f1e9e9e9%3A0x9e9e9e9e9e9e9e9e!2sParbhani%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1634567890123!5m2!1sen!2sin"
+                    src="YOUR_GOOGLE_MAPS_EMBED_URL"
                     width="100%"
-                    height="300"
+                    height="100%"
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title="School Location"
                   />
-                  {/* Placeholder overlay - remove when actual map is configured */}
-                  <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
-                    <div className="text-center text-gray-600">
-                      <FaMapMarkerAlt className="w-12 h-12 mx-auto mb-2" />
-                      <p className="font-medium">School Location Map</p>
-                      <p className="text-sm">Parbhani, Maharashtra</p>
-                    </div>
-                  </div>
+                  */}
                 </div>
               </motion.div>
             </div>
 
-            {/* Right Column - Admission Form */}
-            <div>
+            {/* Right Column - Admission Form (Spans 2 columns) */}
+            <div className="lg:col-span-2">
               <AdmissionForm />
             </div>
           </div>

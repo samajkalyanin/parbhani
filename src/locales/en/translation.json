@@ -17,11 +17,20 @@
     "applyAdmission": "Apply for Admission"
   },
   "hero": {
-    "title": "Center of Quality Education",
-    "subtitle": "Join us for a bright future of your children",
-    "motto": "Knowledge gives humility",
+    "title": "Government Residential School",
+    "titleSecond": "Parbhani",
+    "subtitle": "Center of Quality Education and Holistic Development",
+    "motto": "Bright Future Through Education",
     "applyAdmission": "Apply for Admission",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "stats": {
+      "students": "Students",
+      "teachers": "Teachers",
+      "experience": "Years Experience",
+      "residential": "Residential",
+      "passRate": "Pass Rate",
+      "digitalLearning": "Digital Learning"
+    }
   },
   "features": {
     "feature1": {
