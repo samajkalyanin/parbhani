@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="gallery.title">फोटो गॅलरी | GRS परभणी</title>
+    <meta name="description" content="ग्रामीण विकास संस्थेच्या शाळा परभणी च्या क्रियाकलाप, कार्यक्रम आणि शैक्षणिक वातावरणाचे फोटो पहा.">
+    <link rel="canonical" href="https://parbhani.samajkalyan.info/gallery.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="फोटो गॅलरी | GRS परभणी">
+    <meta property="og:description" content="आमच्या शाळेच्या क्रियाकलाप आणि कार्यक्रमांचे फोटो.">
+    <meta property="og:url" content="https://parbhani.samajkalyan.info/gallery.html">
+    <meta property="og:image" content="https://parbhani.samajkalyan.info/images/og-gallery.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="फोटो गॅलरी | GRS परभणी">
+    <meta name="twitter:description" content="आमच्या शाळेच्या क्रियाकलाप आणि कार्यक्रमांचे फोटो.">
+    <meta name="twitter:image" content="https://parbhani.samajkalyan.info/images/og-gallery.jpg">
+    
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/components.css">
+    <link rel="stylesheet" href="/assets/styles/responsive.css">
+    
+    <style>
+        /* Gallery Filters */
+        .gallery-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: 2px solid var(--primary);
+            background: white;
+            color: var(--primary);
+            border-radius: 2rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn:focus {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+        
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+            padding: 1.5rem 1rem 1rem;
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay,
+        .gallery-item:focus-within .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .gallery-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .gallery-category {
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.95);
+            z-index: 9999;
+            padding: 2rem;
+        }
+        
+        .lightbox.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 85vh;
+            object-fit: contain;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: white;
+            color: var(--primary);
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            color: var(--primary);
+            border: none;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        .lightbox-prev {
+            left: 1rem;
+        }
+        
+        .lightbox-next {
+            right: 1rem;
+        }
+        
+        /* Hidden class for filtering */
+        .gallery-item.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="common.skipToContent">मुख्य सामग्रीवर जा</a>
+    
+    <!-- Header Placeholder -->
+    <div id="site-header"></div>
+    
+    <!-- Breadcrumbs -->
+    <div id="breadcrumbs"></div>
+    
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero hero-inner">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 data-i18n="gallery.hero.title">फोटो गॅलरी</h1>
+                <p class="hero-subtitle" data-i18n="gallery.hero.subtitle">आमच्या शाळेच्या क्रियाकलाप आणि यशोगाथा</p>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section class="section">
+            <div class="container">
+                <!-- Filters -->
+                <div class="gallery-filters" role="group" aria-label="Gallery filters">
+                    <button class="filter-btn active" data-filter="all" data-i18n="gallery.filter.all">सर्व</button>
+                    <button class="filter-btn" data-filter="events" data-i18n="gallery.filter.events">कार्यक्रम</button>
+                    <button class="filter-btn" data-filter="academics" data-i18n="gallery.filter.academics">शैक्षणिक</button>
+                    <button class="filter-btn" data-filter="sports" data-i18n="gallery.filter.sports">क्रीडा</button>
+                    <button class="filter-btn" data-filter="cultural" data-i18n="gallery.filter.cultural">सांस्कृतिक</button>
+                    <button class="filter-btn" data-filter="campus" data-i18n="gallery.filter.campus">परिसर</button>
+                </div>
+                
+                <!-- Gallery Grid -->
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Events -->
+                    <div class="gallery-item" data-category="events" tabindex="0" role="button" aria-label="वार्षिक दिन कार्यक्रम">
+                        <img src="/images/gallery/annual-day.jpg" alt="वार्षिक दिन कार्यक्रम" loading="lazy" data-src="/images/gallery/annual-day.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.events.annualDay">वार्षिक दिन २०२४</div>
+                            <div class="gallery-category" data-i18n="gallery.category.events">कार्यक्रम</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events" tabindex="0" role="button" aria-label="स्वातंत्र्य दिन साजरा">
+                        <img src="/images/gallery/independence-day.jpg" alt="स्वातंत्र्य दिन" loading="lazy" data-src="/images/gallery/independence-day.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.events.independence">स्वातंत्र्य दिन साजरा</div>
+                            <div class="gallery-category" data-i18n="gallery.category.events">कार्यक्रम</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events" tabindex="0" role="button" aria-label="शिक्षक दिन">
+                        <img src="/images/gallery/teachers-day.jpg" alt="शिक्षक दिन" loading="lazy" data-src="/images/gallery/teachers-day.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.events.teachersDay">शिक्षक दिन</div>
+                            <div class="gallery-category" data-i18n="gallery.category.events">कार्यक्रम</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Academics -->
+                    <div class="gallery-item" data-category="academics" tabindex="0" role="button" aria-label="विज्ञान प्रयोग">
+                        <img src="/images/gallery/science-lab.jpg" alt="विज्ञान प्रयोगशाळा" loading="lazy" data-src="/images/gallery/science-lab.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.academics.scienceLab">विज्ञान प्रयोगशाळा</div>
+                            <div class="gallery-category" data-i18n="gallery.category.academics">शैक्षणिक</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="academics" tabindex="0" role="button" aria-label="वर्गात शिक्षण">
+                        <img src="/images/gallery/classroom.jpg" alt="वर्गखोली" loading="lazy" data-src="/images/gallery/classroom.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.academics.classroom">वर्गखोली शिक्षण</div>
+                            <div class="gallery-category" data-i18n="gallery.category.academics">शैक्षणिक</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="academics" tabindex="0" role="button" aria-label="ग्रंथालय">
+                        <img src="/images/gallery/library-students.jpg" alt="ग्रंथालय" loading="lazy" data-src="/images/gallery/library-students.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.academics.library">ग्रंथालय</div>
+                            <div class="gallery-category" data-i18n="gallery.category.academics">शैक्षणिक</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sports -->
+                    <div class="gallery-item" data-category="sports" tabindex="0" role="button" aria-label="क्रिकेट सामना">
+                        <img src="/images/gallery/cricket-match.jpg" alt="क्रिकेट" loading="lazy" data-src="/images/gallery/cricket-match.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.sports.cricket">क्रिकेट सामना</div>
+                            <div class="gallery-category" data-i18n="gallery.category.sports">क्रीडा</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="sports" tabindex="0" role="button" aria-label="कबड्डी स्पर्धा">
+                        <img src="/images/gallery/kabaddi.jpg" alt="कबड्डी" loading="lazy" data-src="/images/gallery/kabaddi.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.sports.kabaddi">कबड्डी स्पर्धा</div>
+                            <div class="gallery-category" data-i18n="gallery.category.sports">क्रीडा</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="sports" tabindex="0" role="button" aria-label="ॲथलेटिक्स">
+                        <img src="/images/gallery/athletics.jpg" alt="ॲथलेटिक्स" loading="lazy" data-src="/images/gallery/athletics.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.sports.athletics">ॲथलेटिक्स स्पर्धा</div>
+                            <div class="gallery-category" data-i18n="gallery.category.sports">क्रीडा</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cultural -->
+                    <div class="gallery-item" data-category="cultural" tabindex="0" role="button" aria-label="सांस्कृतिक कार्यक्रम">
+                        <img src="/images/gallery/cultural-program.jpg" alt="सांस्कृतिक कार्यक्रम" loading="lazy" data-src="/images/gallery/cultural-program.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.cultural.program">सांस्कृतिक कार्यक्रम</div>
+                            <div class="gallery-category" data-i18n="gallery.category.cultural">सांस्कृतिक</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="cultural" tabindex="0" role="button" aria-label="नृत्य सादरीकरण">
+                        <img src="/images/gallery/dance.jpg" alt="नृत्य" loading="lazy" data-src="/images/gallery/dance.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.cultural.dance">नृत्य सादरीकरण</div>
+                            <div class="gallery-category" data-i18n="gallery.category.cultural">सांस्कृतिक</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="cultural" tabindex="0" role="button" aria-label="संगीत कार्यक्रम">
+                        <img src="/images/gallery/music.jpg" alt="संगीत" loading="lazy" data-src="/images/gallery/music.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.cultural.music">संगीत कार्यक्रम</div>
+                            <div class="gallery-category" data-i18n="gallery.category.cultural">सांस्कृतिक</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Campus -->
+                    <div class="gallery-item" data-category="campus" tabindex="0" role="button" aria-label="शाळा इमारत">
+                        <img src="/images/gallery/school-building.jpg" alt="शाळा इमारत" loading="lazy" data-src="/images/gallery/school-building.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.campus.building">शाळा इमारत</div>
+                            <div class="gallery-category" data-i18n="gallery.category.campus">परिसर</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="campus" tabindex="0" role="button" aria-label="वसतिगृह">
+                        <img src="/images/gallery/hostel-exterior.jpg" alt="वसतिगृह" loading="lazy" data-src="/images/gallery/hostel-exterior.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.campus.hostel">वसतिगृह</div>
+                            <div class="gallery-category" data-i18n="gallery.category.campus">परिसर</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="campus" tabindex="0" role="button" aria-label="क्रीडा मैदान">
+                        <img src="/images/gallery/playground.jpg" alt="क्रीडा मैदान" loading="lazy" data-src="/images/gallery/playground.jpg" onerror="this.src='/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title" data-i18n="gallery.campus.playground">क्रीडा मैदान</div>
+                            <div class="gallery-category" data-i18n="gallery.category.campus">परिसर</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">×</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+    
+    <!-- Footer Placeholder -->
+    <div id="site-footer"></div>
+    
+    <!-- Scripts -->
+    <script src="/js/config.js"></script>
+    <script src="/js/translations.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/forms.js"></script>
+    <script src="/js/whatsapp.js"></script>
+    <script src="/js/animations.js"></script>
+    
+    <script>
+        // Gallery Filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxClose = document.getElementById('lightbox-close');
+            const lightboxPrev = document.getElementById('lightbox-prev');
+            const lightboxNext = document.getElementById('lightbox-next');
+            let currentIndex = 0;
+            let visibleItems = [];
+            
+            // Filter functionality
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.dataset.filter;
+                    
+                    // Update active state
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter items
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+                    
+                    updateVisibleItems();
+                });
+            });
+            
+            // Update visible items array
+            function updateVisibleItems() {
+                visibleItems = Array.from(galleryItems).filter(item => !item.classList.contains('hidden'));
+            }
+            updateVisibleItems();
+            
+            // Lightbox functionality
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', function() {
+                    openLightbox(index);
+                });
+                
+                // Keyboard accessibility
+                item.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openLightbox(index);
+                    }
+                });
+            });
+            
+            function openLightbox(index) {
+                const items = Array.from(galleryItems);
+                currentIndex = visibleItems.indexOf(items[index]);
+                const img = items[index].querySelector('img');
+                lightboxImg.src = img.dataset.src || img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            function showNext() {
+                currentIndex = (currentIndex + 1) % visibleItems.length;
+                const img = visibleItems[currentIndex].querySelector('img');
+                lightboxImg.src = img.dataset.src || img.src;
+                lightboxImg.alt = img.alt;
+            }
+            
+            function showPrev() {
+                currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+                const img = visibleItems[currentIndex].querySelector('img');
+                lightboxImg.src = img.dataset.src || img.src;
+                lightboxImg.alt = img.alt;
+            }
+            
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightboxNext.addEventListener('click', showNext);
+            lightboxPrev.addEventListener('click', showPrev);
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (!lightbox.classList.contains('active')) return;
+                
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') showNext();
+                if (e.key === 'ArrowLeft') showPrev();
+            });
+            
+            // Close on background click
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) closeLightbox();
+            });
+        });
+    </script>
+</body>
+</html>

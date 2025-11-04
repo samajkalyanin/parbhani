@@ -1,0 +1,18 @@
+# robots.txt for parbhani.samajkalyan.info
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://parbhani.samajkalyan.info/sitemap.xml
+
+# Disallow development and documentation folders (if deployed accidentally)
+Disallow: /guide/
+Disallow: /docs/
+Disallow: /test/
+Disallow: /dev/
+
+# Allow crawling of assets
+Allow: /assets/
+Allow: /images/
+Allow: /js/
