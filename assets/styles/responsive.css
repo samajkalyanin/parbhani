@@ -16,8 +16,38 @@
     font-size: var(--text-4xl);
   }
   
+  /* Keep most grids single column on small devices */
+  .grid-2.grid-sm-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Stats can be 2 columns on small screens */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================
+   MEDIUM DEVICES (640px+)
+   ============================================ */
+@media (min-width: 640px) {
+  /* Enable 2-column grids */
   .grid-2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Better spacing */
+  .container {
+    padding: 0 var(--space-6);
+  }
+  
+  section {
+    padding: var(--space-16) 0;
+  }
+  
+  /* Improved card padding */
+  .card {
+    padding: var(--space-6);
   }
 }
 
@@ -104,6 +134,28 @@
 @media (min-width: 1200px) {
   .container {
     padding: 0 var(--space-10);
+  }
+  
+  .hero {
+    padding: var(--space-24) 0;
+  }
+  
+  /* Constrain very wide content for better readability */
+  .hero-content {
+    max-width: 1000px;
+  }
+  
+  section {
+    padding: var(--space-24) 0;
+  }
+}
+
+/* ============================================
+   EXTRA LARGE DESKTOP (1400px+)
+   ============================================ */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
   }
   
   .hero {
@@ -201,9 +253,19 @@
   /* Buttons */
   .hero-cta {
     flex-direction: column;
+    align-items: stretch;
   }
   
   .btn {
+    width: 100%;
+  }
+  
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-group .btn {
     width: 100%;
   }
   

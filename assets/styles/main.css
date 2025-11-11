@@ -19,6 +19,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
   min-height: 100vh;
   font-size: 16px;
   font-weight: 400;
+  position: relative;
 }
 
 /* ============================================
@@ -240,6 +242,24 @@ a:visited {
 }
 
 /* ============================================
+   MEDIA - RESPONSIVE IMAGES & EMBEDS
+   ============================================ */
+img,
+video,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img {
+  border-style: none;
+  vertical-align: middle;
+}
+
+/* ============================================
    FOCUS STYLES - WCAG 2.1 AA
    ============================================ */
 *:focus-visible {
@@ -300,6 +320,20 @@ section {
   padding: var(--space-16) 0;
 }
 
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+  }
+}
+
 main {
   min-height: 60vh;
 }
@@ -330,6 +364,21 @@ main {
 .mb-0 { margin-bottom: 0; }
 .mb-4 { margin-bottom: var(--space-4); }
 .mb-8 { margin-bottom: var(--space-8); }
+.mb-12 { margin-bottom: var(--space-12); }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+.w-full { width: 100%; }
+.max-w-full { max-width: 100%; }
+
+/* Flexbox utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
 
 .pt-0 { padding-top: 0; }
 .pt-8 { padding-top: var(--space-8); }
