@@ -82,6 +82,8 @@ const translations = {
     'about.history.heading': 'Our History',
     'about.history.text': 'Established in 2005, GRS Parbhani has been serving students from Scheduled Caste and Neo-Buddhist communities for over 20 years, with more than 3000 successful alumni.',
     
+    'about.cta.subtitle': 'Apply today for admission',
+    
     // Academics Page
     'academics.breadcrumb': 'Academics',
     'academics.hero.title': 'Academic Programs',
@@ -302,6 +304,8 @@ const translations = {
     
     'about.history.heading': 'आमचा इतिहास',
     'about.history.text': '२००५ मध्ये स्थापित, परभणी निवासी शाळा २० वर्षांपासून अनुसूचित जाती आणि नवबौद्ध समुदायातील विद्यार्थ्यांची सेवा करत आहे, ३००० पेक्षा जास्त यशस्वी माजी विद्यार्थी.',
+    
+    'about.cta.subtitle': 'प्रवेशासाठी आज अर्ज करा',
     
     // Academics Page
     'academics.breadcrumb': 'शैक्षणिक',
