@@ -413,19 +413,35 @@
 .card-icon {
   font-size: var(--text-5xl);
   margin-bottom: var(--space-4);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  border-radius: var(--radius-lg);
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-icon svg {
+  width: 32px;
+  height: 32px;
 }
 
 .card-title {
   color: var(--primary);
   margin-bottom: var(--space-3);
   font-size: var(--text-xl);
+  text-align: center;
 }
 
 .card-text {
   color: var(--text-secondary);
   line-height: var(--leading-relaxed);
   margin-bottom: 0;
+  text-align: center;
 }
 
 /* ============================================

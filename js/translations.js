@@ -25,10 +25,10 @@ const translations = {
     'accessibility.skipToContent': 'Skip to main content',
     
     // Home Page
-    'home.hero.title': 'Welcome to Government Residential School Parbhani',
-    'home.hero.subtitle': 'Excellence in Education | Holistic Development for SC & Neo-Buddhist Students',
+    'home.hero.title': 'Welcome to GRS Parbhani',
+    'home.hero.subtitle': 'Quality Education & Holistic Development for SC & Neo-Buddhist Students',
     'home.hero.cta1': 'Apply for Admission',
-    'home.hero.cta2': 'Explore More',
+    'home.hero.cta2': 'Learn More',
     
     'home.stats.students': 'Students',
     'home.stats.faculty': 'Faculty Members',
@@ -44,16 +44,16 @@ const translations = {
     'home.highlights.holistic.desc': 'Sports, arts, music, and co-curricular activities',
     
     'home.about.heading': 'About GRS Parbhani',
-    'home.about.text': 'Government Residential School Parbhani, under the Social Welfare Department of Maharashtra, provides free quality education with residential facilities for Scheduled Caste and Neo-Buddhist students from Class 5th to 12th.',
-    'home.about.cta': 'Learn More About Us',
+    'home.about.text': 'Government Residential School Parbhani, under the Social Welfare Department of Maharashtra, provides free quality education with residential facilities for Scheduled Caste and Neo-Buddhist students from Classes 5th to 12th.',
+    'home.about.cta': 'Learn More →',
     
     'home.academics.heading': 'Academic Excellence',
-    'home.academics.text': 'State Board curriculum with focus on holistic development through sports, arts, and co-curricular activities.',
-    'home.academics.cta': 'View Programs',
+    'home.academics.text': 'Maharashtra State Board curriculum with focus on holistic development through sports, arts, and co-curricular activities.',
+    'home.academics.cta': 'View Academic Programs →',
     
     'home.facilities.heading': 'World-Class Facilities',
     'home.facilities.text': 'Modern hostel accommodation, well-equipped laboratories, library, sports facilities, and medical services.',
-    'home.facilities.cta': 'Explore Facilities',
+    'home.facilities.cta': 'Explore Our Facilities →',
     
     'home.admissions.heading': 'Admissions Open for 2025-26',
     'home.admissions.deadline': 'Application Deadline: December 15, 2025',
@@ -248,8 +248,8 @@ const translations = {
     'accessibility.skipToContent': 'मुख्य सामग्रीवर जा',
     
     // Home Page
-    'home.hero.title': 'शासकीय निवासी शाळा, परभणी येथे आपले स्वागत आहे',
-    'home.hero.subtitle': 'शिक्षणातील उत्कृष्टता | अनुसूचित जाती व नवबौद्ध विद्यार्थ्यांसाठी सर्वांगीण विकास',
+    'home.hero.title': 'जीआरएस परभणी येथे आपले स्वागत आहे',
+    'home.hero.subtitle': 'अनुसूचित जाती व नवबौद्ध विद्यार्थ्यांसाठी दर्जेदार शिक्षण आणि सर्वांगीण विकास',
     'home.hero.cta1': 'प्रवेशासाठी अर्ज करा',
     'home.hero.cta2': 'अधिक जाणून घ्या',
     
@@ -268,15 +268,15 @@ const translations = {
     
     'home.about.heading': 'परभणी निवासी शाळेबद्दल',
     'home.about.text': 'शासकीय निवासी शाळा परभणी, महाराष्ट्र समाज कल्याण विभागाअंतर्गत अनुसूचित जाती आणि नवबौद्ध विद्यार्थ्यांसाठी इयत्ता ५वी ते १२वी पर्यंत मोफत दर्जेदार शिक्षण आणि वसतिगृह सुविधा प्रदान करते.',
-    'home.about.cta': 'आमच्याबद्दल अधिक जाणून घ्या',
+    'home.about.cta': 'अधिक जाणून घ्या →',
     
     'home.academics.heading': 'शैक्षणिक उत्कृष्टता',
-    'home.academics.text': 'राज्य मंडळ अभ्यासक्रम आणि क्रीडा, कला आणि सहपाठ्यक्रम उपक्रमांद्वारे सर्वांगीण विकास.',
-    'home.academics.cta': 'कार्यक्रम पहा',
+    'home.academics.text': 'महाराष्ट्र राज्य मंडळ अभ्यासक्रम आणि क्रीडा, कला आणि सहपाठ्यक्रम उपक्रमांद्वारे सर्वांगीण विकास.',
+    'home.academics.cta': 'शैक्षणिक कार्यक्रम पहा →',
     
     'home.facilities.heading': 'आधुनिक सुविधा',
     'home.facilities.text': 'आधुनिक वसतिगृह, सुसज्ज प्रयोगशाळा, ग्रंथालय, क्रीडा सुविधा आणि वैद्यकीय सेवा.',
-    'home.facilities.cta': 'सुविधा पहा',
+    'home.facilities.cta': 'सुविधा पहा →',
     
     'home.admissions.heading': '२०२५-२६ साठी प्रवेश सुरू',
     'home.admissions.deadline': 'अर्जाची शेवटची तारीख: १५ डिसेंबर, २०२५',
