@@ -484,13 +484,14 @@
 .hero-title {
   font-size: var(--text-5xl);
   margin-bottom: var(--space-6);
-  color: var(--text-on-primary);
+  color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-subtitle {
   font-size: var(--text-xl);
   margin-bottom: var(--space-8);
+  color: #ffffff;
   opacity: 0.95;
   line-height: var(--leading-relaxed);
 }
