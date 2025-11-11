@@ -10,7 +10,7 @@ yarn-error.log*
 
 # Documentation (keep in repo, don't deploy)
 guide/
-docs/
+# docs/ - Removed: We want docs in GitHub for AI continuity
 dev/
 test/
 
