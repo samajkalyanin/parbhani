@@ -86,7 +86,7 @@ images/
 ```
 Create a modern, professional school logo for "Gramin Vikas Sanstha School Parbhani" in Maharashtra, India. 
 Style: Minimalist, circular emblem with deep ocean blue (#1E3A8A) as primary color and gold (#FCD34D) accents.
-Elements: Open book symbol, rising sun, rural landscape silhouette, Devanagari script for "शासकीय वसती विद्यालय परभणी".
+Elements: Open book symbol, rising sun, rural landscape silhouette, Devanagari script for "शासकीय निवासी शाळा परभणी".
 Flat design, high contrast, suitable for both light and dark backgrounds.
 Output: Square 1000×1000px PNG with transparent background.
 ```
@@ -125,7 +125,7 @@ Camera: Canon EOS 5D, 24mm wide-angle, f/8, natural lighting.
 **AI Prompt**:
 ```
 Front view of a well-maintained government residential school building in Maharashtra.
-Architecture: 2-3 story red-brick building, white-painted windows, "शासकीय वसती विद्यालय परभणी" signboard above entrance,
+Architecture: 2-3 story red-brick building, white-painted windows, "शासकीय निवासी शाळा परभणी" signboard above entrance,
 Indian flag on roof, neem trees on sides, clean paved pathway leading to entrance.
 Time: Afternoon, bright natural light, clear sky.
 Style: Architectural documentation, sharp focus, vibrant but realistic colors.
@@ -143,7 +143,7 @@ Resolution: 1200×800px, high detail.
 ```
 Social media banner image for Gramin Vikas Sanstha School Parbhani.
 Layout: School building in background (slightly blurred), overlay text area on left third.
-Text (on image): "शासकीय वसती विद्यालय परभणी | Free Education for Rural Students"
+Text (on image): "शासकीय निवासी शाळा परभणी | Free Education for Rural Students"
 Color: Deep blue gradient overlay (#1E3A8A to transparent), gold accent line.
 Elements: Small logo in top-left, Indian flag subtle watermark, happy students in background.
 Style: Modern, professional, inspiring, high contrast for text readability.

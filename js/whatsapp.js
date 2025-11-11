@@ -24,7 +24,7 @@ function generateWhatsAppMessage(formData) {
   let message = '';
   
   if (lang === 'mr') {
-    message = `नमस्कार! मला शासकीय वसती विद्यालय परभणी येथे प्रवेशाबद्दल माहिती हवी आहे.\n\n`;
+    message = `नमस्कार! मला शासकीय निवासी शाळा परभणी येथे प्रवेशाबद्दल माहिती हवी आहे.\n\n`;
     message += `विद्यार्थ्याचे नाव: ${formData.studentName || formData.name || ''}\n`;
     message += `पालकाचे नाव: ${formData.parentName || ''}\n`;
     message += `मोबाइल: ${formData.phone || ''}\n`;
