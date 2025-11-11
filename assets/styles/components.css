@@ -400,48 +400,52 @@
   background: var(--bg-primary);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
-  padding: var(--space-6);
-  transition: var(--transition);
+  padding: var(--space-8);
+  transition: all var(--transition);
   height: 100%;
+  border: 1px solid var(--border);
 }
 
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
+  border-color: var(--primary-light);
 }
 
 .card-icon {
-  font-size: var(--text-5xl);
-  margin-bottom: var(--space-4);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   color: white;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto var(--space-5);
+  box-shadow: var(--shadow-md);
 }
 
 .card-icon svg {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
 }
 
 .card-title {
-  color: var(--primary);
+  color: var(--text-primary);
   margin-bottom: var(--space-3);
-  font-size: var(--text-xl);
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 600;
   text-align: center;
+  line-height: 1.3;
 }
 
 .card-text {
   color: var(--text-secondary);
-  line-height: var(--leading-relaxed);
+  line-height: 1.7;
   margin-bottom: 0;
   text-align: center;
+  font-size: 1rem;
 }
 
 /* ============================================
@@ -498,18 +502,25 @@
 }
 
 .hero-title {
-  font-size: var(--text-5xl);
+  font-size: clamp(2.5rem, 6vw, 4rem);
   margin-bottom: var(--space-6);
   color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-size: var(--text-xl);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   margin-bottom: var(--space-8);
   color: #ffffff;
   opacity: 0.95;
-  line-height: var(--leading-relaxed);
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-cta {
@@ -550,6 +561,30 @@
   font-size: var(--text-lg);
   color: var(--text-secondary);
   font-weight: var(--font-medium);
+}
+
+/* ============================================
+   SECTION HEADERS
+   ============================================ */
+.section-header {
+  margin-bottom: var(--space-12);
+}
+
+.section-header h2 {
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 /* ============================================
