@@ -55,7 +55,7 @@ function generateHeader() {
                     <a href="/index.html" class="logo-link">
                         <img src="/images/logo.png" alt="GRS Parbhani Logo" class="logo-img" width="60" height="60" onerror="this.style.display='none'">
                         <div class="logo-text">
-                            <h1 class="logo-title" data-i18n="site.name">${CONFIG.schoolName.mr}</h1>
+                            <h1 class="logo-title" data-i18n="site.name">GRS Parbhani</h1>
                             <p class="logo-subtitle" data-i18n="site.department">Social Justice & Special Assistance Dept</p>
                         </div>
                     </a>
@@ -197,7 +197,7 @@ function generateFooter() {
     
     <div class="footer-bottom">
         <div class="container">
-            <p data-i18n="footer.copyright">© ${currentYear} Government Residential School, Parbhani. All rights reserved.</p>
+            <p data-i18n="footer.copyright">© ${currentYear} GRS Parbhani. All rights reserved.</p>
             <p class="footer-credit" data-i18n="footer.managedBy">Managed by Social Justice & Special Assistance Department, Government of Maharashtra</p>
         </div>
     </div>

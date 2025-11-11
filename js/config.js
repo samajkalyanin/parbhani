@@ -2,8 +2,8 @@
 const CONFIG = {
   // School Information
   schoolName: {
-    en: 'Government Residential School, Parbhani',
-    mr: 'शासकीय वसती विद्यालय, परभणी'
+    en: 'GRS Parbhani',
+    mr: 'जीआरएस परभणी'
   },
   
   // Contact Details - UPDATE BEFORE DEPLOYMENT
@@ -12,8 +12,8 @@ const CONFIG = {
     phone: '+91-2452-123456',
     email: 'grsparbhani@gmail.com',
     address: {
-      en: 'Government Residential School, Parbhani District, Maharashtra 431401, India',
-      mr: 'शासकीय वसती विद्यालय, परभणी जिल्हा, महाराष्ट्र 431401, भारत'
+      en: 'GRS Parbhani, Parbhani District, Maharashtra 431401, India',
+      mr: 'जीआरएस परभणी, परभणी जिल्हा, महाराष्ट्र 431401, भारत'
     }
   },
   

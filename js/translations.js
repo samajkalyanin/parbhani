@@ -2,7 +2,7 @@
 const translations = {
   en: {
     // Site
-    'site.name': 'Government Residential School, Parbhani',
+    'site.name': 'GRS Parbhani',
     'site.department': 'Social Justice & Special Assistance Department',
     
     // Language
@@ -207,12 +207,12 @@ const translations = {
     'footer.followUs': 'Follow Us',
     'footer.sitemap': 'Sitemap',
     'footer.policies': 'Policies',
-    'footer.copyright': '© 2025 Government Residential School, Parbhani. All rights reserved.',
+    'footer.copyright': '© 2025 GRS Parbhani. All rights reserved.',
     'footer.managedBy': 'Managed by Social Justice & Special Assistance Department, Government of Maharashtra',
     
     // WhatsApp
     'whatsapp.tooltip': 'Chat with us on WhatsApp',
-    'whatsapp.message': 'Hello! I would like to know about admissions at Government Residential School Parbhani.',
+    'whatsapp.message': 'Hello! I would like to know about admissions at GRS Parbhani.',
     
     // Policies
     'policies.breadcrumb': 'Policies',
@@ -223,7 +223,7 @@ const translations = {
   
   mr: {
     // Site
-    'site.name': 'शासकीय वसती विद्यालय, परभणी',
+    'site.name': 'जीआरएस परभणी',
     'site.department': 'सामाजिक न्याय आणि विशेष सहाय्य विभाग',
     
     // Language
@@ -428,12 +428,12 @@ const translations = {
     'footer.followUs': 'आम्हाला फॉलो करा',
     'footer.sitemap': 'साइटमॅप',
     'footer.policies': 'धोरणे',
-    'footer.copyright': '© २०२५ शासकीय वसती विद्यालय, परभणी. सर्व हक्क राखीव.',
+    'footer.copyright': '© २०२५ जीआरएस परभणी. सर्व हक्क राखीव.',
     'footer.managedBy': 'सामाजिक न्याय आणि विशेष सहाय्य विभाग, महाराष्ट्र शासन यांचे व्यवस्थापन',
     
     // WhatsApp
     'whatsapp.tooltip': 'व्हॉट्सअॅपवर आमच्याशी चॅट करा',
-    'whatsapp.message': 'नमस्कार! मला शासकीय वसती विद्यालय परभणी येथील प्रवेशाबद्दल माहिती हवी आहे.',
+    'whatsapp.message': 'नमस्कार! मला जीआरएस परभणी येथील प्रवेशाबद्दल माहिती हवी आहे.',
     
     // Policies
     'policies.breadcrumb': 'धोरणे',
