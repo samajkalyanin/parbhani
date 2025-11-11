@@ -3,7 +3,7 @@ const translations = {
   en: {
     // Site
     'site.name': 'GRS Parbhani',
-    'site.department': 'Social Justice & Special Assistance Department',
+    'site.department': 'Social Welfare Department',
     
     // Language
     'language.marathi': 'मराठी',
@@ -44,7 +44,7 @@ const translations = {
     'home.highlights.holistic.desc': 'Sports, arts, music, and co-curricular activities',
     
     'home.about.heading': 'About GRS Parbhani',
-    'home.about.text': 'Government Residential School Parbhani, under the Social Justice & Special Assistance Department of Maharashtra, provides free quality education with residential facilities for Scheduled Caste and Neo-Buddhist students from Class 5th to 12th.',
+    'home.about.text': 'Government Residential School Parbhani, under the Social Welfare Department of Maharashtra, provides free quality education with residential facilities for Scheduled Caste and Neo-Buddhist students from Class 5th to 12th.',
     'home.about.cta': 'Learn More About Us',
     
     'home.academics.heading': 'Academic Excellence',
@@ -208,7 +208,7 @@ const translations = {
     'footer.sitemap': 'Sitemap',
     'footer.policies': 'Policies',
     'footer.copyright': '© 2025 GRS Parbhani. All rights reserved.',
-    'footer.managedBy': 'Managed by Social Justice & Special Assistance Department, Government of Maharashtra',
+    'footer.managedBy': 'Managed by Social Welfare Department, Government of Maharashtra',
     
     // WhatsApp
     'whatsapp.tooltip': 'Chat with us on WhatsApp',
@@ -224,7 +224,7 @@ const translations = {
   mr: {
     // Site
     'site.name': 'जीआरएस परभणी',
-    'site.department': 'सामाजिक न्याय आणि विशेष सहाय्य विभाग',
+    'site.department': 'समाज कल्याण विभाग',
     
     // Language
     'language.marathi': 'मराठी',
@@ -265,7 +265,7 @@ const translations = {
     'home.highlights.holistic.desc': 'क्रीडा, कला, संगीत आणि सहपाठ्यक्रम उपक्रम',
     
     'home.about.heading': 'परभणी निवासी शाळेबद्दल',
-    'home.about.text': 'शासकीय निवासी शाळा परभणी, महाराष्ट्र सामाजिक न्याय आणि विशेष सहाय्य विभागाअंतर्गत अनुसूचित जाती आणि नवबौद्ध विद्यार्थ्यांसाठी इयत्ता ५वी ते १२वी पर्यंत मोफत दर्जेदार शिक्षण आणि वसतिगृह सुविधा प्रदान करते.',
+    'home.about.text': 'शासकीय निवासी शाळा परभणी, महाराष्ट्र समाज कल्याण विभागाअंतर्गत अनुसूचित जाती आणि नवबौद्ध विद्यार्थ्यांसाठी इयत्ता ५वी ते १२वी पर्यंत मोफत दर्जेदार शिक्षण आणि वसतिगृह सुविधा प्रदान करते.',
     'home.about.cta': 'आमच्याबद्दल अधिक जाणून घ्या',
     
     'home.academics.heading': 'शैक्षणिक उत्कृष्टता',
@@ -429,7 +429,7 @@ const translations = {
     'footer.sitemap': 'साइटमॅप',
     'footer.policies': 'धोरणे',
     'footer.copyright': '© २०२५ जीआरएस परभणी. सर्व हक्क राखीव.',
-    'footer.managedBy': 'सामाजिक न्याय आणि विशेष सहाय्य विभाग, महाराष्ट्र शासन यांचे व्यवस्थापन',
+    'footer.managedBy': 'समाज कल्याण विभाग, महाराष्ट्र शासन यांचे व्यवस्थापन',
     
     // WhatsApp
     'whatsapp.tooltip': 'व्हॉट्सअॅपवर आमच्याशी चॅट करा',

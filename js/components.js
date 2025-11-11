@@ -121,7 +121,7 @@ function generateFooter() {
                 <div class="footer-col">
                     <h3 class="footer-title" data-i18n="site.name">${CONFIG.schoolName.mr}</h3>
                     <p class="footer-text">
-                        <span data-i18n="site.department">Social Justice & Special Assistance Department</span>
+                        <span data-i18n="site.department">Social Welfare Department</span>
                     </p>
                     <div class="footer-social">
                         <a href="${CONFIG.social.facebook}" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
@@ -198,7 +198,7 @@ function generateFooter() {
     <div class="footer-bottom">
         <div class="container">
             <p data-i18n="footer.copyright">© ${currentYear} GRS Parbhani. All rights reserved.</p>
-            <p class="footer-credit" data-i18n="footer.managedBy">Managed by Social Justice & Special Assistance Department, Government of Maharashtra</p>
+            <p class="footer-credit" data-i18n="footer.managedBy">Managed by Social Welfare Department, Government of Maharashtra</p>
         </div>
     </div>
 </footer>
