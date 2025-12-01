@@ -42,6 +42,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     
+    <!-- 3D Icons Library -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="/assets/styles/components.css">
@@ -130,33 +133,22 @@
                 <h2 id="highlights-heading" class="text-center" data-i18n="home.highlights.heading">आमची वैशिष्ट्ये</h2>
                 <div class="grid grid-auto">
                     <div class="card" data-reveal>
-                        <div class="card-icon" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                            </svg>
+                        <div class="card-icon icon-3d" aria-hidden="true">
+                            <iconify-icon icon="noto:school" width="48" height="48"></iconify-icon>
                         </div>
                         <h3 class="card-title" data-i18n="home.highlights.residential.title">वसतिगृह शिक्षण</h3>
                         <p class="card-text" data-i18n="home.highlights.residential.desc">मोफत शिक्षण, निवास, पौष्टिक जेवण आणि पाठ्यपुस्तके</p>
                     </div>
                     <div class="card" data-reveal>
-                        <div class="card-icon" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            </svg>
+                        <div class="card-icon icon-3d" aria-hidden="true">
+                            <iconify-icon icon="noto:teacher" width="48" height="48"></iconify-icon>
                         </div>
                         <h3 class="card-title" data-i18n="home.highlights.faculty.title">पात्र शिक्षक</h3>
                         <p class="card-text" data-i18n="home.highlights.faculty.desc">५०+ अनुभवी आणि समर्पित शिक्षक</p>
                     </div>
                     <div class="card" data-reveal>
-                        <div class="card-icon" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg>
+                        <div class="card-icon icon-3d" aria-hidden="true">
+                            <iconify-icon icon="noto:trophy" width="48" height="48"></iconify-icon>
                         </div>
                         <h3 class="card-title" data-i18n="home.highlights.holistic.title">सर्वांगीण विकास</h3>
                         <p class="card-text" data-i18n="home.highlights.holistic.desc">क्रीडा, कला, संगीत आणि सहपाठ्यक्रम उपक्रम</p>
@@ -200,11 +192,11 @@
         </section>
         
         <!-- Admissions CTA Section -->
-        <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; padding: var(--space-16) 0;" aria-labelledby="admissions-heading">
+        <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: var(--space-16) 0;" aria-labelledby="admissions-heading">
             <div class="container text-center">
                 <h2 id="admissions-heading" data-i18n="home.admissions.heading" style="color: white;">२०२५-२६ साठी प्रवेश सुरू</h2>
-                <p data-i18n="home.admissions.deadline" style="font-size: var(--text-xl); margin-bottom: var(--space-4); opacity: 0.95;">अर्जाची शेवटची तारीख: १५ डिसेंबर, २०२५</p>
-                <p data-i18n="home.admissions.eligibility" style="margin-bottom: var(--space-8); opacity: 0.9;">पात्रता: अ.जा./नवबौद्ध, कौटुंबिक उत्पन्न < ₹२.५ लाख</p>
+                <p data-i18n="home.admissions.deadline" style="font-size: var(--text-xl); margin-bottom: var(--space-4); color: white;">अर्जाची शेवटची तारीख: १५ डिसेंबर, २०२५</p>
+                <p data-i18n="home.admissions.eligibility" style="margin-bottom: var(--space-8); color: rgba(255,255,255,0.9);">पात्रता: अ.जा./नवबौद्ध, कौटुंबिक उत्पन्न < ₹२.५ लाख</p>
                 <a href="/admissions.html" class="btn btn-accent btn-lg" data-i18n="home.admissions.cta">आता अर्ज करा</a>
             </div>
         </section>
@@ -215,7 +207,7 @@
                 <h2 id="whatsapp-cta-heading" data-i18n="home.cta.heading">आमच्यात सामील व्हा</h2>
                 <p class="mb-8" data-i18n="home.cta.text">त्वरित मदत आणि प्रवेश मार्गदर्शनासाठी व्हॉट्सअॅपवर संपर्क साधा</p>
                 <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
-                    <a href="#whatsapp" class="btn btn-lg" style="background: #25D366; color: white; border-color: #25D366;" data-i18n="home.cta.whatsapp">व्हॉट्सअॅपवर अर्ज करा</a>
+                    <a href="#whatsapp" class="btn btn-whatsapp btn-lg" data-i18n="home.cta.whatsapp">व्हॉट्सअॅपवर अर्ज करा</a>
                     <a href="tel:+91-2452-123456" class="btn btn-primary btn-lg" data-i18n="home.cta.call">आम्हाला कॉल करा</a>
                 </div>
             </div>
