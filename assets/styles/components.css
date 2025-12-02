@@ -20,7 +20,7 @@
 
 .header-top {
   background: var(--primary);
-  color: var(--text-on-primary);
+  color: #ffffff;
   padding: var(--space-2) 0;
   font-size: var(--text-sm);
 }
@@ -41,7 +41,7 @@
 }
 
 .header-link {
-  color: var(--text-on-primary);
+  color: #ffffff;
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
@@ -644,23 +644,23 @@
 }
 
 .hero-title {
-  font-size: clamp(3.5rem, 8vw, 5.5rem);
+  font-size: clamp(4rem, 9vw, 6.5rem);
   margin-bottom: var(--space-6);
   color: #ffffff;
-  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.05;
   letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
   margin-bottom: var(--space-8);
   color: #ffffff;
   opacity: 0.95;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
-  max-width: 800px;
+  max-width: 850px;
   margin-left: auto;
   margin-right: auto;
 }

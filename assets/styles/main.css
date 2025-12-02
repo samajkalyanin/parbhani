@@ -53,7 +53,7 @@ body {
   --text-primary: #1a1a1a;        /* 16:1 on white */
   --text-secondary: #4a4a4a;      /* 9:1 on white */
   --text-muted: #6b7280;          /* 4.6:1 on white - AA compliant */
-  --text-on-primary: #f8fafc;     /* 13.1:1 on primary */
+  --text-on-primary: #ffffff;    /* Pure white for perfect contrast */
   --text-on-accent: #1a1a1a;      /* 16:1 on accent */
   
   /* Background Colors */
