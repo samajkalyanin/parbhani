@@ -613,8 +613,11 @@
   background-position: center;
   background-repeat: no-repeat;
   color: var(--text-on-primary);
-  padding: clamp(8rem, 20vh, 12rem) var(--space-6);
-  min-height: 75vh;
+  padding: clamp(6rem, 15vh, 10rem) var(--space-6);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   overflow: hidden;
 }
@@ -634,6 +637,7 @@
   z-index: 2;
   max-width: 900px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .hero-title {
