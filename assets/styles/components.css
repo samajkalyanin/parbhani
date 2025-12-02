@@ -422,8 +422,8 @@
 }
 
 .btn-lg {
-  padding: var(--space-4) var(--space-8);
-  font-size: var(--text-lg);
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--text-base);
 }
 
 .btn-sm {
@@ -641,23 +641,23 @@
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: clamp(3rem, 7vw, 5rem);
   margin-bottom: var(--space-6);
   color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
   margin-bottom: var(--space-8);
   color: #ffffff;
   opacity: 0.95;
   line-height: 1.6;
   font-weight: 400;
-  max-width: 700px;
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
