@@ -136,7 +136,8 @@
 .nav-link.active,
 .nav-link[aria-current="page"] {
   background: var(--primary);
-  color: var(--text-on-primary);
+  color: #ffffff !important;
+  font-weight: var(--font-semibold);
 }
 
 /* Language Switcher */
@@ -263,9 +264,11 @@
   text-decoration: none;
 }
 
-.mobile-link[aria-current="page"] {
-  background: var(--primary-light);
-  color: white;
+.mobile-link[aria-current="page"],
+.mobile-link.active {
+  background: var(--primary);
+  color: #ffffff !important;
+  font-weight: var(--font-semibold);
 }
 
 /* ============================================
@@ -641,23 +644,23 @@
 }
 
 .hero-title {
-  font-size: clamp(3rem, 7vw, 5rem);
+  font-size: clamp(3.5rem, 8vw, 5.5rem);
   margin-bottom: var(--space-6);
   color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
   margin-bottom: var(--space-8);
   color: #ffffff;
   opacity: 0.95;
   line-height: 1.6;
   font-weight: 400;
-  max-width: 750px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
