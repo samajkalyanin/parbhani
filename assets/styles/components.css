@@ -130,7 +130,7 @@
 
 .nav-link:hover {
   background: var(--gray-100);
-  color: var(--primary);
+  color: #000000;
   text-decoration: none;
 }
 
@@ -262,7 +262,7 @@
 
 .mobile-link:hover {
   background: var(--gray-50);
-  color: var(--primary);
+  color: #000000;
   text-decoration: none;
 }
 
@@ -549,7 +549,7 @@
 .card-title {
   color: #000000;
   margin-bottom: var(--space-3);
-  font-size: clamp(1.25rem, 2.25vw, 1.5rem);
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
   font-weight: 600;
   text-align: center;
   line-height: 1.3;
@@ -649,23 +649,23 @@
 }
 
 .hero-title {
-  font-size: clamp(5rem, 11vw, 8rem);
+  font-size: clamp(3rem, 6vw, 4.5rem);
   margin-bottom: var(--space-6);
   color: #ffffff;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.01em;
 }
 
 .hero-subtitle {
-  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   margin-bottom: var(--space-8);
   color: #ffffff;
   opacity: 0.95;
-  line-height: 1.5;
-  font-weight: 500;
-  max-width: 900px;
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -718,7 +718,7 @@
 }
 
 .section-header h2 {
-  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   margin-bottom: var(--space-4);
   color: #000000;
@@ -727,9 +727,9 @@
 }
 
 .section-subtitle {
-  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--text-secondary);
-  max-width: 750px;
+  max-width: 700px;
   margin: 0 auto;
   line-height: 1.7;
   font-weight: 400;
