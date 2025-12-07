@@ -120,7 +120,7 @@
 .nav-link {
   display: block;
   padding: var(--space-2) var(--space-4);
-  color: #000000;
+  color: #000000 !important;
   font-size: 1rem;
   font-weight: var(--font-medium);
   border-radius: var(--radius);
@@ -130,7 +130,7 @@
 
 .nav-link:hover {
   background: var(--gray-100);
-  color: #000000;
+  color: #000000 !important;
   text-decoration: none;
 }
 
@@ -253,7 +253,7 @@
 .mobile-link {
   display: block;
   padding: var(--space-4);
-  color: #000000;
+  color: #000000 !important;
   font-size: 1rem;
   font-weight: var(--font-medium);
   transition: var(--transition);
@@ -262,7 +262,7 @@
 
 .mobile-link:hover {
   background: var(--gray-50);
-  color: #000000;
+  color: #000000 !important;
   text-decoration: none;
 }
 
