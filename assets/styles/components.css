@@ -364,14 +364,14 @@
 
 .btn-primary {
   background: var(--primary);
-  color: #ffffff;
+  color: #ffffff !important;
   border-color: var(--primary);
 }
 
 .btn-primary:hover {
   background: var(--primary-hover);
   border-color: var(--primary-hover);
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .btn-primary:focus-visible {
@@ -380,13 +380,14 @@
 
 .btn-secondary {
   background: #ffffff;
-  color: var(--primary);
+  color: var(--primary) !important;
   border-color: var(--primary);
+  font-weight: var(--font-semibold);
 }
 
 .btn-secondary:hover {
   background: var(--primary);
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .btn-secondary:focus-visible {
@@ -396,7 +397,7 @@
 
 .btn-accent {
   background: var(--accent);
-  color: var(--primary-dark);
+  color: #000000 !important;
   border-color: var(--accent);
   font-weight: var(--font-bold);
 }
@@ -404,7 +405,7 @@
 .btn-accent:hover {
   background: var(--accent-hover);
   border-color: var(--accent-hover);
-  color: var(--primary-dark);
+  color: #000000 !important;
 }
 
 .btn-accent:focus-visible {
@@ -413,7 +414,7 @@
 
 .btn-whatsapp {
   background: #25D366;
-  color: #ffffff;
+  color: #ffffff !important;
   border-color: #25D366;
   font-weight: var(--font-semibold);
 }
@@ -421,7 +422,7 @@
 .btn-whatsapp:hover {
   background: #20BA5A;
   border-color: #20BA5A;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .btn-whatsapp:focus-visible {
