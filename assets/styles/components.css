@@ -130,7 +130,7 @@
 
 .nav-link:hover {
   background: var(--gray-100);
-  color: #000000 !important;
+  color: var(--primary) !important;
   text-decoration: none;
 }
 
@@ -262,7 +262,7 @@
 
 .mobile-link:hover {
   background: var(--gray-50);
-  color: #000000 !important;
+  color: var(--primary) !important;
   text-decoration: none;
 }
 
