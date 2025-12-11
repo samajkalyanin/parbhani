@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', 'Noto Sans Devanagari', -apple-system, system-ui, sans-serif;
+  font-family: 'Mukta', 'Outfit', -apple-system, system-ui, sans-serif;
   line-height: 1.7;
   color: var(--text-primary);
   background: var(--bg-gradient);
@@ -104,8 +104,8 @@ body {
   --shadow-glow-accent: 0 0 30px rgba(245, 158, 11, 0.4);
   
   /* Glassmorphism */
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(255, 255, 255, 0.3);
   --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
   
   /* Border Radius - Modern Curves */
@@ -176,7 +176,7 @@ body {
    MODERN TYPOGRAPHY
    ============================================ */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+  font-family: 'Outfit', 'Mukta', sans-serif;
   font-weight: var(--font-bold);
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -478,7 +478,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/images/hero/school-building.jpg') center/cover no-repeat fixed;
+  background: url('/images/school-building.jpg') center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -489,7 +489,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--gradient-hero);
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.90) 0%, rgba(79, 70, 229, 0.85) 100%);
   z-index: 1;
 }
 

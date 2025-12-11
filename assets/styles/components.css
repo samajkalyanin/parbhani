@@ -3,6 +3,27 @@
    =================================================================== */
 
 /* ============================================
+   ACCESSIBILITY - SKIP LINK
+   ============================================ */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--primary);
+  color: white;
+  padding: var(--space-3) var(--space-6);
+  text-decoration: none;
+  font-weight: 700;
+  z-index: 9999;
+  border-radius: 0 0 var(--radius) 0;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ============================================
    HEADER
    ============================================ */
 .site-header {
@@ -129,16 +150,17 @@
   padding: var(--space-2) var(--space-4);
   color: #000000 !important;
   font-size: 1rem;
-  font-weight: var(--font-medium);
+  font-weight: 500;
   border-radius: var(--radius);
   transition: var(--transition);
   white-space: nowrap;
+  text-decoration: none !important;
 }
 
 .nav-link:hover {
   background: var(--gray-100);
   color: var(--primary) !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .nav-link.active,
