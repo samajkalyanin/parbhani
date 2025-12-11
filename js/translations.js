@@ -65,6 +65,39 @@ const translations = {
     'home.cta.whatsapp': 'Apply via WhatsApp',
     'home.cta.call': 'Call Us',
     
+    // Achievements Section
+    'home.achievements.heading': 'Our Achievements',
+    'home.achievements.ssc.title': '100% SSC Results 2025',
+    'home.achievements.ssc.desc': 'All students passed with excellent grades',
+    'home.achievements.sports.title': 'State Level Sports Winner',
+    'home.achievements.sports.desc': 'Won 1st place in cricket championship',
+    'home.achievements.science.title': 'Science Exhibition Award',
+    'home.achievements.science.desc': 'Third prize at national level',
+    'home.achievements.scholarships.title': '500+ Scholarships',
+    'home.achievements.scholarships.desc': 'Awarded to students last year',
+    
+    // News Section on Homepage
+    'home.news.heading': 'Latest News',
+    'home.news.viewAll': 'View All News →',
+    'home.news.item1.title': 'Admissions Open 2025-26',
+    'home.news.item1.desc': 'Admission process for Classes 5th to 12th has started. Last date: December 15',
+    'home.news.item2.title': 'Annual Sports Day Success',
+    'home.news.item2.desc': 'Sports day celebrated with great enthusiasm. All students participated.',
+    'home.news.item3.title': 'New Computer Lab Inaugurated',
+    'home.news.item3.desc': 'Modern lab with 50 computers inaugurated. Latest software available.',
+    
+    // Testimonials Section
+    'home.testimonials.heading': 'Student & Parent Experiences',
+    'home.testimonials.student1.text': 'GRS Parbhani gave direction to my life. Free education and excellent guidance made me an engineer today.',
+    'home.testimonials.student1.name': 'Rahul Patil',
+    'home.testimonials.student1.designation': 'Alumni 2020, Engineer',
+    'home.testimonials.student2.text': "The teachers' guidance here is excellent. Library, labs and sports facilities are outstanding.",
+    'home.testimonials.student2.name': 'Priya Jadhav',
+    'home.testimonials.student2.designation': 'Student, Class 12th',
+    'home.testimonials.parent1.text': 'My son got good education and accommodation here. Thanks to school management.',
+    'home.testimonials.parent1.name': 'Mrs. Anita Gaikwad',
+    'home.testimonials.parent1.designation': 'Parent',
+    
     // About Page
     'about.breadcrumb': 'About',
     'about.hero.title': 'About GRS Parbhani',
@@ -398,6 +431,39 @@ const translations = {
     
     'news.readMore': 'अधिक वाचा',
     'news.latest': 'ताज्या बातम्या',
+    
+    // Achievements Section
+    'home.achievements.heading': 'आमची उपलब्धी',
+    'home.achievements.ssc.title': '१००% एसएससी निकाल २०२५',
+    'home.achievements.ssc.desc': 'सर्व विद्यार्थी उत्तम गुणांसह उत्तीर्ण झाले',
+    'home.achievements.sports.title': 'राज्यस्तरीय क्रीडा विजेता',
+    'home.achievements.sports.desc': 'क्रिकेट स्पर्धेत प्रथम क्रमांक मिळवला',
+    'home.achievements.science.title': 'विज्ञान प्रदर्शन पुरस्कार',
+    'home.achievements.science.desc': 'राष्ट्रीय स्तरावर तिसरा पुरस्कार',
+    'home.achievements.scholarships.title': '५००+ शिष्यवृत्ती',
+    'home.achievements.scholarships.desc': 'गेल्या वर्षी विद्यार्थ्यांना मिळाली',
+    
+    // News Section on Homepage
+    'home.news.heading': 'ताज्या बातम्या',
+    'home.news.viewAll': 'सर्व बातम्या पहा →',
+    'home.news.item1.title': 'प्रवेश प्रक्रिया सुरू २०२५-२६',
+    'home.news.item1.desc': 'इयत्ता ५वी ते १२वी साठी प्रवेश प्रक्रिया सुरू झाली आहे. शेवटची तारीख: १५ डिसेंबर',
+    'home.news.item2.title': 'वार्षिक क्रीडा दिन यश',
+    'home.news.item2.desc': 'मोठ्या उत्साहात क्रीडा दिन साजरा केला गेला. सर्व विद्यार्थ्यांनी भाग घेतला.',
+    'home.news.item3.title': 'नवीन संगणक लॅब उद्घाटन',
+    'home.news.item3.desc': '५० संगणक असलेल्या आधुनिक लॅबचे उद्घाटन झाले. नवीनतम सॉफ्टवेअर उपलब्ध.',
+    
+    // Testimonials Section
+    'home.testimonials.heading': 'विद्यार्थी आणि पालकांचे अनुभव',
+    'home.testimonials.student1.text': 'जीआरएस परभणीने माझ्या आयुष्याला दिशा दिली. मोफत शिक्षण आणि उत्तम मार्गदर्शनामुळे आज मी इंजिनियर आहे.',
+    'home.testimonials.student1.name': 'राहुल पाटील',
+    'home.testimonials.student1.designation': 'माजी विद्यार्थी २०२०, इंजिनियर',
+    'home.testimonials.student2.text': 'इथल्या शिक्षकांचे मार्गदर्शन अप्रतिम आहे. लायब्ररी, लॅब आणि खेळाच्या सुविधा उत्कृष्ट आहेत.',
+    'home.testimonials.student2.name': 'प्रिया जाधव',
+    'home.testimonials.student2.designation': 'विद्यार्थिनी, इयत्ता १२वी',
+    'home.testimonials.parent1.text': 'माझ्या मुलाला इथे चांगले शिक्षण आणि राहण्याची सुविधा मिळाली. शाळेच्या व्यवस्थापनाचे आभार.',
+    'home.testimonials.parent1.name': 'श्रीमती अनिता गायकवाड',
+    'home.testimonials.parent1.designation': 'पालक',
     
     // Contact Page
     'contact.breadcrumb': 'संपर्क',
