@@ -10,7 +10,7 @@ const CONFIG = {
   contact: {
     whatsapp: '919876543210', // Format: 91XXXXXXXXXX (no + or spaces)
     phone: '+91-2452-123456',
-    email: 'grsparbhani@gmail.com',
+    email: 'parbhani@samajkalyan.info',
     address: {
       en: 'GRS Parbhani, Parbhani District, Maharashtra 431401, India',
       mr: 'जीआरएस परभणी, परभणी जिल्हा, महाराष्ट्र 431401, भारत'
