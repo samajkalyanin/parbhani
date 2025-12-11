@@ -37,19 +37,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     
-    <!-- Modern Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     
     <!-- 3D Icons Library -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     
-    <!-- Modern Stylesheets -->
-    <link rel="stylesheet" href="/assets/styles/modern.css">
-    <link rel="stylesheet" href="/assets/styles/modern-components.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="/assets/styles/components.css">
     <link rel="stylesheet" href="/assets/styles/responsive.css">
+    <link rel="stylesheet" href="/assets/styles/enhancements.css">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -103,24 +103,24 @@
             </div>
         </section>
         
-        <!-- Stats Section - Modern Glass Design -->
+        <!-- Stats Section -->
         <section class="stats-section" aria-labelledby="stats-heading">
             <div class="container">
                 <h2 id="stats-heading" class="sr-only">School Statistics</h2>
                 <div class="stats-grid">
-                    <div class="stat-card" data-reveal>
+                    <div class="stat-item">
                         <span class="stat-number" data-count="500" data-suffix="+">500+</span>
                         <span class="stat-label" data-i18n="home.stats.students">विद्यार्थी</span>
                     </div>
-                    <div class="stat-card" data-reveal>
+                    <div class="stat-item">
                         <span class="stat-number" data-count="50" data-suffix="+">50+</span>
                         <span class="stat-label" data-i18n="home.stats.faculty">शिक्षक</span>
                     </div>
-                    <div class="stat-card" data-reveal>
+                    <div class="stat-item">
                         <span class="stat-number" data-count="20" data-suffix="+">20+</span>
                         <span class="stat-label" data-i18n="home.stats.experience">वर्षांचा अनुभव</span>
                     </div>
-                    <div class="stat-card" data-reveal>
+                    <div class="stat-item">
                         <span class="stat-number" data-count="3000" data-suffix="+">3000+</span>
                         <span class="stat-label" data-i18n="home.stats.alumni">माजी विद्यार्थी</span>
                     </div>
@@ -128,31 +128,31 @@
             </div>
         </section>
         
-        <!-- Features Section - Modern Cards -->
-        <section class="section" aria-labelledby="highlights-heading">
+        <!-- Highlights Section -->
+        <section aria-labelledby="highlights-heading">
             <div class="container">
-                <h2 id="highlights-heading" class="text-center mb-12" data-i18n="home.highlights.heading">आमची वैशिष्ट्ये</h2>
-                <div class="grid grid-3">
-                    <div class="feature-card" data-reveal>
-                        <div class="feature-icon" aria-hidden="true">
+                <h2 id="highlights-heading" class="text-center" data-i18n="home.highlights.heading">आमची वैशिष्ट्ये</h2>
+                <div class="grid grid-auto">
+                    <div class="card" data-reveal>
+                        <div class="card-icon icon-3d" aria-hidden="true">
                             <iconify-icon icon="noto:school" width="48" height="48"></iconify-icon>
                         </div>
-                        <h3 class="feature-title" data-i18n="home.highlights.residential.title">वसतिगृह शिक्षण</h3>
-                        <p class="feature-description" data-i18n="home.highlights.residential.desc">मोफत शिक्षण, निवास, पौष्टिक जेवण आणि पाठ्यपुस्तके</p>
+                        <h3 class="card-title" data-i18n="home.highlights.residential.title">वसतिगृह शिक्षण</h3>
+                        <p class="card-text" data-i18n="home.highlights.residential.desc">मोफत शिक्षण, निवास, पौष्टिक जेवण आणि पाठ्यपुस्तके</p>
                     </div>
-                    <div class="feature-card" data-reveal>
-                        <div class="feature-icon" aria-hidden="true">
+                    <div class="card" data-reveal>
+                        <div class="card-icon icon-3d" aria-hidden="true">
                             <iconify-icon icon="noto:teacher" width="48" height="48"></iconify-icon>
                         </div>
-                        <h3 class="feature-title" data-i18n="home.highlights.faculty.title">पात्र शिक्षक</h3>
-                        <p class="feature-description" data-i18n="home.highlights.faculty.desc">५०+ अनुभवी आणि समर्पित शिक्षक</p>
+                        <h3 class="card-title" data-i18n="home.highlights.faculty.title">पात्र शिक्षक</h3>
+                        <p class="card-text" data-i18n="home.highlights.faculty.desc">५०+ अनुभवी आणि समर्पित शिक्षक</p>
                     </div>
-                    <div class="feature-card" data-reveal>
-                        <div class="feature-icon" aria-hidden="true">
+                    <div class="card" data-reveal>
+                        <div class="card-icon icon-3d" aria-hidden="true">
                             <iconify-icon icon="noto:trophy" width="48" height="48"></iconify-icon>
                         </div>
-                        <h3 class="feature-title" data-i18n="home.highlights.holistic.title">सर्वांगीण विकास</h3>
-                        <p class="feature-description" data-i18n="home.highlights.holistic.desc">क्रीडा, कला, संगीत आणि सहपाठ्यक्रम उपक्रम</p>
+                        <h3 class="card-title" data-i18n="home.highlights.holistic.title">सर्वांगीण विकास</h3>
+                        <p class="card-text" data-i18n="home.highlights.holistic.desc">क्रीडा, कला, संगीत आणि सहपाठ्यक्रम उपक्रम</p>
                     </div>
                 </div>
             </div>
@@ -221,45 +221,39 @@
             </div>
         </section>
         
-        <!-- Latest News Section - Modern Cards -->
-        <section class="section bg-secondary" aria-labelledby="news-heading">
+        <!-- Latest News Section -->
+        <section class="bg-secondary" aria-labelledby="news-heading">
             <div class="container">
-                <div class="flex justify-between items-center mb-12">
+                <div class="flex-between mb-8">
                     <h2 id="news-heading" data-i18n="home.news.heading">ताज्या बातम्या</h2>
                     <a href="/news.html" class="btn btn-secondary" data-i18n="home.news.viewAll">सर्व बातम्या पहा →</a>
                 </div>
                 <div class="grid grid-3">
-                    <div class="news-card" data-reveal>
-                        <div class="news-card-image-wrapper">
-                            <img src="/images/news/admissions-2025.jpg" alt="प्रवेश २०२५" class="news-card-image" loading="lazy" onerror="this.style.display='none'">
-                            <span class="news-card-date">डिसेंबर १, २०२५</span>
-                        </div>
-                        <div class="news-card-content">
-                            <h3 class="news-card-title" data-i18n="home.news.item1.title">प्रवेश प्रक्रिया सुरू २०२५-२६</h3>
-                            <p class="news-card-description" data-i18n="home.news.item1.desc">इयत्ता ५वी ते १२वी साठी प्रवेश प्रक्रिया सुरू झाली आहे. शेवटची तारीख: १५ डिसेंबर</p>
-                            <a href="/news-detail.html?slug=admissions-2025" class="news-card-link" data-i18n="news.readMore">अधिक वाचा →</a>
+                    <div class="card" data-reveal>
+                        <img src="/images/news/admissions-2025.jpg" alt="प्रवेश २०२५" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div style="padding: var(--space-4);">
+                            <p class="text-muted" style="font-size: var(--text-sm); margin-bottom: var(--space-2);">डिसेंबर १, २०२५</p>
+                            <h3 class="card-title" data-i18n="home.news.item1.title">प्रवेश प्रक्रिया सुरू २०२५-२६</h3>
+                            <p class="card-text" data-i18n="home.news.item1.desc">इयत्ता ५वी ते १२वी साठी प्रवेश प्रक्रिया सुरू झाली आहे. शेवटची तारीख: १५ डिसेंबर</p>
+                            <a href="/news-detail.html?slug=admissions-2025" class="btn btn-secondary btn-sm" data-i18n="news.readMore">अधिक वाचा →</a>
                         </div>
                     </div>
-                    <div class="news-card" data-reveal>
-                        <div class="news-card-image-wrapper">
-                            <img src="/images/news/sports-day.jpg" alt="क्रीडा दिन" class="news-card-image" loading="lazy" onerror="this.style.display='none'">
-                            <span class="news-card-date">नोव्हेंबर २०, २०२५</span>
-                        </div>
-                        <div class="news-card-content">
-                            <h3 class="news-card-title" data-i18n="home.news.item2.title">वार्षिक क्रीडा दिन यश</h3>
-                            <p class="news-card-description" data-i18n="home.news.item2.desc">मोठ्या उत्साहात क्रीडा दिन साजरा केला गेला. सर्व विद्यार्थ्यांनी भाग घेतला.</p>
-                            <a href="/news-detail.html?slug=sports-day-2025" class="news-card-link" data-i18n="news.readMore">अधिक वाचा →</a>
+                    <div class="card" data-reveal>
+                        <img src="/images/news/sports-day.jpg" alt="क्रीडा दिन" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div style="padding: var(--space-4);">
+                            <p class="text-muted" style="font-size: var(--text-sm); margin-bottom: var(--space-2);">नोव्हेंबर २०, २०२५</p>
+                            <h3 class="card-title" data-i18n="home.news.item2.title">वार्षिक क्रीडा दिन यश</h3>
+                            <p class="card-text" data-i18n="home.news.item2.desc">मोठ्या उत्साहात क्रीडा दिन साजरा केला गेला. सर्व विद्यार्थ्यांनी भाग घेतला.</p>
+                            <a href="/news-detail.html?slug=sports-day-2025" class="btn btn-secondary btn-sm" data-i18n="news.readMore">अधिक वाचा →</a>
                         </div>
                     </div>
-                    <div class="news-card" data-reveal>
-                        <div class="news-card-image-wrapper">
-                            <img src="/images/news/computer-lab.jpg" alt="संगणक लॅब" class="news-card-image" loading="lazy" onerror="this.style.display='none'">
-                            <span class="news-card-date">नोव्हेंबर १०, २०२५</span>
-                        </div>
-                        <div class="news-card-content">
-                            <h3 class="news-card-title" data-i18n="home.news.item3.title">नवीन संगणक लॅब उद्घाटन</h3>
-                            <p class="news-card-description" data-i18n="home.news.item3.desc">५० संगणक असलेल्या आधुनिक लॅबचे उद्घाटन झाले. नवीनतम सॉफ्टवेअर उपलब्ध.</p>
-                            <a href="/news-detail.html?slug=computer-lab-2025" class="news-card-link" data-i18n="news.readMore">अधिक वाचा →</a>
+                    <div class="card" data-reveal>
+                        <img src="/images/news/computer-lab.jpg" alt="संगणक लॅब" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div style="padding: var(--space-4);">
+                            <p class="text-muted" style="font-size: var(--text-sm); margin-bottom: var(--space-2);">नोव्हेंबर १०, २०२५</p>
+                            <h3 class="card-title" data-i18n="home.news.item3.title">नवीन संगणक लॅब उद्घाटन</h3>
+                            <p class="card-text" data-i18n="home.news.item3.desc">५० संगणक असलेल्या आधुनिक लॅबचे उद्घाटन झाले. नवीनतम सॉफ्टवेअर उपलब्ध.</p>
+                            <a href="/news-detail.html?slug=computer-lab-2025" class="btn btn-secondary btn-sm" data-i18n="news.readMore">अधिक वाचा →</a>
                         </div>
                     </div>
                 </div>
@@ -308,18 +302,13 @@
             </div>
         </section>
         
-        <!-- Admissions CTA Section - Modern Gradient -->
-        <section class="cta-section" aria-labelledby="admissions-heading">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 id="admissions-heading" class="cta-title" data-i18n="home.admissions.heading">२०२५-२६ साठी प्रवेश सुरू</h2>
-                    <p class="cta-description" data-i18n="home.admissions.deadline">अर्जाची शेवटची तारीख: १५ डिसेंबर, २०२५</p>
-                    <p class="cta-description" data-i18n="home.admissions.eligibility" style="margin-bottom: var(--space-8);">पात्रता: अ.जा./नवबौद्ध, कौटुंबिक उत्पन्न < ₹२.५ लाख</p>
-                    <div class="cta-buttons">
-                        <a href="/admissions.html" class="btn btn-accent btn-lg" data-i18n="home.admissions.cta">आता अर्ज करा</a>
-                        <a href="/about.html" class="btn btn-glass btn-lg" data-i18n="home.hero.cta2">अधिक जाणून घ्या</a>
-                    </div>
-                </div>
+        <!-- Admissions CTA Section -->
+        <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: var(--space-16) 0;" aria-labelledby="admissions-heading">
+            <div class="container text-center">
+                <h2 id="admissions-heading" data-i18n="home.admissions.heading" style="color: white;">२०२५-२६ साठी प्रवेश सुरू</h2>
+                <p data-i18n="home.admissions.deadline" style="font-size: var(--text-xl); margin-bottom: var(--space-4); color: white;">अर्जाची शेवटची तारीख: १५ डिसेंबर, २०२५</p>
+                <p data-i18n="home.admissions.eligibility" style="margin-bottom: var(--space-8); color: rgba(255,255,255,0.9);">पात्रता: अ.जा./नवबौद्ध, कौटुंबिक उत्पन्न < ₹२.५ लाख</p>
+                <a href="/admissions.html" class="btn btn-accent btn-lg" data-i18n="home.admissions.cta">आता अर्ज करा</a>
             </div>
         </section>
         

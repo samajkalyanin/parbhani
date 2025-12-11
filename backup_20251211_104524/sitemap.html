@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="sitemap.title">साइटमॅप | GRS परभणी</title>
+    <meta name="description" content="ग्रामीण विकास संस्थेच्या शाळा परभणी वेबसाइट साइटमॅप - सर्व पृष्ठांची सूची.">
+    <link rel="canonical" href="https://parbhani.samajkalyan.info/sitemap.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="साइटमॅप | GRS परभणी">
+    <meta property="og:description" content="वेबसाइटवरील सर्व पृष्ठांची सूची.">
+    <meta property="og:url" content="https://parbhani.samajkalyan.info/sitemap.html">
+    
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/components.css">
+    <link rel="stylesheet" href="/assets/styles/responsive.css">
+    <link rel="stylesheet" href="/assets/styles/enhancements.css">
+    
+    <style>
+        .sitemap-section {
+            margin-bottom: 3rem;
+        }
+        
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .sitemap-list li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .sitemap-list a {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+        
+        .sitemap-list a:hover,
+        .sitemap-list a:focus {
+            background: var(--primary-light);
+            border-color: var(--primary);
+            transform: translateX(4px);
+        }
+        
+        .sitemap-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .sitemap-link-content {
+            flex: 1;
+        }
+        
+        .sitemap-link-title {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .sitemap-link-desc {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        
+        .sitemap-arrow {
+            color: var(--primary);
+            font-size: 1.25rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .sitemap-list a:hover .sitemap-arrow,
+        .sitemap-list a:focus .sitemap-arrow {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="common.skipToContent">मुख्य सामग्रीवर जा</a>
+    
+    <!-- Header Placeholder -->
+    <div id="site-header"></div>
+    
+    <!-- Breadcrumbs -->
+    <div id="breadcrumbs"></div>
+    
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero hero-inner">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title" data-i18n="sitemap.hero.title">साइटमॅप</h1>
+                <p class="hero-subtitle" data-i18n="sitemap.hero.subtitle">वेबसाइटवरील सर्व पृष्ठे</p>
+            </div>
+        </section>
+        
+        <!-- Sitemap Content -->
+        <section class="section">
+            <div class="container" style="max-width: 900px;">
+                <!-- Main Pages -->
+                <div class="sitemap-section">
+                    <h2 data-i18n="sitemap.main.title">मुख्य पृष्ठे</h2>
+                    <ul class="sitemap-list">
+                        <li>
+                            <a href="/index.html">
+                                <span class="sitemap-icon">🏠</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.main.home">मुख्यपृष्ठ</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.main.homeDesc">स्वागत आणि अवलोकन</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/about.html">
+                                <span class="sitemap-icon">ℹ️</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.main.about">आमच्याबद्दल</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.main.aboutDesc">आमची कहाणी, ध्येय आणि दृष्टी</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Academic Pages -->
+                <div class="sitemap-section">
+                    <h2 data-i18n="sitemap.academic.title">शैक्षणिक</h2>
+                    <ul class="sitemap-list">
+                        <li>
+                            <a href="/academics.html">
+                                <span class="sitemap-icon">📚</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.academic.programs">शैक्षणिक कार्यक्रम</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.academic.programsDesc">अभ्यासक्रम, शिकवण्याच्या पद्धती आणि मूल्यमापन</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/admissions.html">
+                                <span class="sitemap-icon">📝</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.academic.admissions">प्रवेश</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.academic.admissionsDesc">पात्रता, प्रक्रिया आणि अर्ज फॉर्म</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Facilities Pages -->
+                <div class="sitemap-section">
+                    <h2 data-i18n="sitemap.facilities.title">सुविधा</h2>
+                    <ul class="sitemap-list">
+                        <li>
+                            <a href="/facilities.html">
+                                <span class="sitemap-icon">🏢</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.facilities.all">सर्व सुविधा</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.facilities.allDesc">वसतिगृह, जेवणगृह, ग्रंथालय, प्रयोगशाळा, क्रीडा</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Gallery & News -->
+                <div class="sitemap-section">
+                    <h2 data-i18n="sitemap.media.title">मीडिया आणि बातम्या</h2>
+                    <ul class="sitemap-list">
+                        <li>
+                            <a href="/gallery.html">
+                                <span class="sitemap-icon">📷</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.media.gallery">फोटो गॅलरी</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.media.galleryDesc">कार्यक्रम, क्रियाकलाप आणि परिसराचे फोटो</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/news.html">
+                                <span class="sitemap-icon">📰</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.media.news">बातम्या</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.media.newsDesc">ताज्या अपडेट्स आणि घोषणा</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/news-detail.html">
+                                <span class="sitemap-icon">📄</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.media.newsDetail">बातमी तपशील</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.media.newsDetailDesc">वैयक्तिक बातम्यांचा संपूर्ण लेख</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Contact & Policies -->
+                <div class="sitemap-section">
+                    <h2 data-i18n="sitemap.info.title">माहिती आणि समर्थन</h2>
+                    <ul class="sitemap-list">
+                        <li>
+                            <a href="/contact.html">
+                                <span class="sitemap-icon">📞</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.info.contact">संपर्क</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.info.contactDesc">पत्ता, फोन, ईमेल आणि संपर्क फॉर्म</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/policies.html">
+                                <span class="sitemap-icon">📋</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.info.policies">धोरणे</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.info.policiesDesc">गोपनीयता, अटी व शर्ती, प्रवेशयोग्यता</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sitemap.html" aria-current="page">
+                                <span class="sitemap-icon">🗺️</span>
+                                <div class="sitemap-link-content">
+                                    <div class="sitemap-link-title" data-i18n="sitemap.info.sitemap">साइटमॅप</div>
+                                    <div class="sitemap-link-desc" data-i18n="sitemap.info.sitemapDesc">हे पृष्ठ</div>
+                                </div>
+                                <span class="sitemap-arrow">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- XML Sitemap -->
+                <div class="card" style="text-align: center; padding: 2rem; margin-top: 3rem; background: var(--bg-secondary);">
+                    <h2 data-i18n="sitemap.xml.title">XML साइटमॅप</h2>
+                    <p data-i18n="sitemap.xml.desc">शोध इंजिनसाठी XML साइटमॅप पहा:</p>
+                    <a href="/sitemap.xml" class="btn btn-primary" style="margin-top: 1rem;">sitemap.xml पहा</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Placeholder -->
+    <div id="site-footer"></div>
+    
+    <!-- Scripts -->
+    <script src="/js/config.js"></script>
+    <script src="/js/translations.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/forms.js"></script>
+    <script src="/js/whatsapp.js"></script>
+    <script src="/js/animations.js"></script>
+</body>
+</html>
