@@ -48,11 +48,14 @@
   transition: var(--transition);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--radius-sm);
+  text-decoration: none;
 }
 
 .header-link:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
   text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .header-link svg {
